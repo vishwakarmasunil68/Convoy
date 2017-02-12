@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context="com.emobi.convoy.activity.RegisterActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="1dp"
+                        android:src="@drawable/ic_profile" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="First Name"
+                    android:textColorHint="#757575"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/corner_edittext"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/et_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Last Name"
+                    android:textColorHint="#757575"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/corner_edittext"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/et_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:textColorHint="#757575"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/corner_edittext"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Email"
+                    android:textColorHint="#757575"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/corner_edittext"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Password"
+                    android:textColorHint="#757575"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/corner_edittext"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/et_confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Confirm Password"
+                    android:textColorHint="#757575"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/corner_edittext"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:text="Interests Minimum Two" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_entertainment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Entertainment" />
+
+                    <TextView
+                        android:id="@+id/tv_travelling"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Travelling" />
+
+                    <TextView
+                        android:id="@+id/tv_family"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Family" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_study"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Study" />
+
+                    <TextView
+                        android:id="@+id/tv_gaming"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Gaming" />
+
+                    <TextView
+                        android:id="@+id/tv_evening"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Ev...ing" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_sports"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Sports" />
+
+                    <TextView
+                        android:id="@+id/tv_technology"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Technology" />
+
+                    <TextView
+                        android:id="@+id/tv_action"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:text="Action" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/buttonborder"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left">
+
+                    <Button
+                        android:id="@+id/btn_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clear"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/buttonborder"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

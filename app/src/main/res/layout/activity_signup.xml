@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.emobi.convoy.activity.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convoy"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convoy is for coordinating groups of people who are"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="driving is seperate vehicles to the same destination."/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_twitter_sign_in"/>
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/twitterLogin"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_fb"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:src="@drawable/ic_facebook"/>
+
+        <ImageView
+            android:id="@+id/iv_google"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:src="@drawable/ic_google_plus"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_signup_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or sign up using your email"/>
+
+    </LinearLayout>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+</LinearLayout>

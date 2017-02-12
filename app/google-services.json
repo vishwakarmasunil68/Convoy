@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "120145411463",
+    "firebase_url": "https://convey-1479467496325.firebaseio.com",
+    "project_id": "convey-1479467496325",
+    "storage_bucket": "convey-1479467496325.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120145411463:android:62a1f898ca198763",
+        "android_client_info": {
+          "package_name": "com.emobi.convoy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120145411463-ljc8v21sng4kues0k5t8fgdg5kr1jkpu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emobi.convoy",
+            "certificate_hash": "04F2D0DCDA2399DCFE9B86F0E498FF2AA18A1C00"
+          }
+        },
+        {
+          "client_id": "120145411463-v1ikv1k9rau82m17vaeabvddqgdj5fus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Chmwv6Jm3fIELuLJJVXhChbA9YCyRKo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120145411463-630og04vsn4kcmkr2kmgdue8ueq7t793.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.emobi.Conveyswift"
+              }
+            },
+            {
+              "client_id": "120145411463-v1ikv1k9rau82m17vaeabvddqgdj5fus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
